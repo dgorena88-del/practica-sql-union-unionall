@@ -24,7 +24,7 @@ FROM inventario_sucursal_sur;
 
 SELECT id_producto, nombre_producto, categoria, stock
 FROM inventario_sucursal_norte
-UNION
+UNION ALL
 SELECT id_producto, nombre_producto, categoria, stock
 FROM inventario_sucursal_sur;
 
